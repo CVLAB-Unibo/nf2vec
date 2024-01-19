@@ -1,0 +1,40 @@
+# IMPORTANT: Use relative paths to the root of the project or absolute paths
+
+out_root: "task_mapping_network/train"
+
+inrs_dset_root: "task_mapping_network/inr_embeddings"
+nerfs_dset_root: "task_mapping_network/nerf_embeddings"
+pcd_root: "task_mapping_network/point_clouds"
+
+train_split: "train"
+train_bs: 256
+
+val_split: "val"
+val_bs: 16
+
+test_split: "test"
+
+embedding_dim: 1024
+num_layers_transfer: 8
+
+nerf2vec_decoder_ckpt_path: "nerf2vec/train/ckpts/499.pt"
+inr2vec_decoder_ckpt_path: "task_mapping_network/inr2vec/train/ckpts/299.pt"
+completion_ckpt_path: "task_mapping_network/train/ckpts/299.pt"
+
+inr_decoder:
+  input_dim: 3
+  hidden_dim: 512
+  num_hidden_layers_before_skip: 2
+  num_hidden_layers_after_skip: 2
+  out_dim: 1
+
+nerf_decoder:
+  input_dim: 3
+  hidden_dim: 1024
+  num_hidden_layers_before_skip: 2
+  num_hidden_layers_after_skip: 2
+  out_dim: 4
+
+lr: 1e-4
+wd: 1e-4
+num_epochs: 300
