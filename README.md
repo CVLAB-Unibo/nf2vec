@@ -1,6 +1,6 @@
 # nerf2vec
 
-This repository contains the code related to the **nerf2vec** framework, which is detailed in the paper [nerf2vec: Neural Radiance Fields to Vector](https://arxiv.org/abs/2312.13277).
+This repository contains the code related to the **nerf2vec** framework, which is detailed in the paper [Deep Learning on 3D Neural Fields](https://arxiv.org/abs/2312.13277).
 
 ## MACHINE CONFIGURATION
 
