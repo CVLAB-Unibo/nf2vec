@@ -6,6 +6,7 @@ This repository contains the code related to the **nerf2vec** framework, which i
 
 Before running the code, ensure that your machine is properly configured. 
 This project was developed with the following main dependencies:
+* python==3.8.18
 * torch==1.12.0+cu113
 * torchvision==0.13.0+cu113
 * nerfacc==0.3.5 (with the proper CUDA version set)
