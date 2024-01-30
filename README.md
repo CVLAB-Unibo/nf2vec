@@ -1,6 +1,7 @@
-# nerf2vec
+# nf2vec
 
-This repository contains the code related to the **nerf2vec** framework, which is detailed in the paper [Deep Learning on 3D Neural Fields](https://arxiv.org/abs/2312.13277).
+This repository contains the code related to **nf2vec** framework, which is detailed in the paper [Deep Learning on 3D Neural Fields](https://arxiv.org/abs/2312.13277). In particular, here you can find the code regarding processing NeRFs. If you want to use the previous version of this framework for processing shapes, refer to [inr2vec](https://github.com/CVLAB-Unibo/inr2vec).
+
 
 ## MACHINE CONFIGURATION
 
@@ -12,9 +13,9 @@ This project was developed with the following main dependencies:
 * nerfacc==0.3.5 (with the proper CUDA version set)
 * wandb==0.16.0 
 
-### nerf2vec
+### nf2vec
 
-What follows are commands that you can execute to replicate the environment in which *nerf2vec* was originally trained:
+What follows are commands that you can execute to replicate the environment in which *nf2vec* was originally trained:
 
 1. Install Python 3.8.18:
     ```bash
@@ -83,11 +84,11 @@ This section contains the details required to run the code.
 
 2. the file *settings.py* contains all the paths (e.g., dataset location, model weights, etc...) and generic configurations that are used from each module explained below. 
 
-3. Some training and experiments, such as the training of the *nerf2vec* framework and the classification task, use the *wandb* library. If you want to use it, then you need to change the following two variables: ``` os.environ["WANDB_SILENT"]``` and  ```os.environ["WANDB_MODE"]```, which are located at the beginning of the *settings.py* module. 
+3. Some training and experiments, such as the training of the *nf2vec* framework and the classification task, use the *wandb* library. If you want to use it, then you need to change the following two variables: ``` os.environ["WANDB_SILENT"]``` and  ```os.environ["WANDB_MODE"]```, which are located at the beginning of the *settings.py* module. 
 
-## Train *nerf2vec*
+## Train *nf2vec*
 
-To train *nerf2vec* you need to have a dataset of trained NeRFs. The implemented code expects that there exist the following files:
+To train *nf2vec* you need to have a dataset of trained NeRFs. The implemented code expects that there exist the following files:
 * data/train.json
 * data/validation.json
 * data/test.json
@@ -99,7 +100,7 @@ These JSONs hold a list of file paths, with each path corresponding to a NeRF mo
 
 The name of the files contained in these folders should not be changed. Within the repository, you can find the JSON files used to originally train the framework.
 
-Execute the following command to train *nerf2vec*:
+Execute the following command to train *nf2vec*:
 ```bash
 python nerf2vec/train_nerf2vec.py
 ```
@@ -162,5 +163,5 @@ The renderings will be created in the *GAN_plots_X* folder, where X is the ID of
 ## Mapping network map
 Please refer to [THIS](task_mapping_network/README.md) README for this task.
 
-## Datasets and model weights
+# Datasets and model weights
 Please contact us if you need access to the datasets, exported embeddings, and weights of the trained models used in all experiments.
