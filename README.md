@@ -1,6 +1,6 @@
 # nf2vec
 
-This repository contains the code related to **nf2vec** framework, which is detailed in the paper [Deep Learning on 3D Neural Fields](https://arxiv.org/abs/2312.13277). In particular, here you can find the code regarding processing NeRFs. If you want to use the previous version of this framework for processing shapes, refer to [inr2vec](https://github.com/CVLAB-Unibo/inr2vec).
+This repository contains the code related to **nf2vec** framework, which is detailed in the paper [Deep Learning on Object-centric 3D Neural Fields](https://arxiv.org/abs/2312.13277). In particular, here you can find the code regarding processing NeRFs. If you want to use the previous version of this framework for processing shapes, refer to [inr2vec](https://github.com/CVLAB-Unibo/inr2vec).
 
 
 ## MACHINE CONFIGURATION
