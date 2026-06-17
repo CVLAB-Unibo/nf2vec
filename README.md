@@ -164,4 +164,5 @@ The renderings will be created in the *GAN_plots_X* folder, where X is the ID of
 Please refer to [THIS](task_mapping_network/README.md) README for this task.
 
 # Datasets and model weights
-Please contact us if you need access to the datasets, exported embeddings, and weights of the trained models used in all experiments.
+
+Download them from [[Here](https://drive.google.com/drive/folders/1VHxe4S55EjJ9AHbPtU30DbfTTAuKeSpG?usp=sharing)]
